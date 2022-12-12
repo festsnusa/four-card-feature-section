@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Four Card Feature Section 
+    link(rel="icon" type="image/x-icon" href="./images/favicon-32x32.png")
+    link(rel="stylesheet" href="./style.css")
+  body 
+    .component
+      header.component__header 
+        .header 
+          h1.header__title Reliable, efficient delivery
+          h1.header__title_bold Powered by Technology
+          p.header__text Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+      main.component__card
+        .card 
+          .card__item.card__item_cyan
+            h1.card__title= "Supervisor"
+            p.card__text= "Monitors activity to identify project roadblocks"
+            img.card__image(src= "./images/icon-supervisor.svg", alt= "supervisor")
+          .card__item_middle
+            .card__item.card__item_red
+              h1.card__title= "Team Builder"
+              p.card__text= "Scans our talent network to create the optimal team for your project"
+              img.card__image(src= "./images/icon-team-builder.svg", alt= "team builder")
+            .card__item.card__item_orange
+              h1.card__title= "Karma"
+              p.card__text= "Regularly evaluates our talent to ensure quality"
+              img.card__image(src= "./images/icon-karma.svg", alt= "karma")
+          .card__item.card__item_blue
+            h1.card__title= "Calculator"
+            p.card__text= "Uses data from past projects to provide better delivery estimates"
+            img.card__image(src= "./images/icon-calculator.svg", alt= "calculator")
